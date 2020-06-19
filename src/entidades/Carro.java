@@ -1,18 +1,32 @@
 package entidades;
 
 public class Carro {
+	
+	private int id;
+	private String marca;
+	private String modelo;
+	private int ano;
+	private String categoria;
 
-	public Carro(String marca, String modelo, int ano, String categoria) {
+	public Carro() {
+
+	}
+
+	public Carro(int id, String marca, String modelo, int ano, String categoria) {
+		this.id = id;
 		this.marca = marca;
 		this.modelo = modelo;
 		this.ano = ano;
 		this.categoria = categoria;
 	}
 
-	private String marca;
-	private String modelo;
-	private int ano;
-	private String categoria;
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
 
 	public String getMarca() {
 		return marca;
